@@ -1,7 +1,7 @@
 import React from "react";
 
 const SimpleForm = () => {
-  const handleForm = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(e.target.name.value);
     console.log(e.target.email.value);
@@ -10,7 +10,7 @@ const SimpleForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleForm}>
+      <form onSubmit={handleSubmit}>
         <input type="text" name="name" />
         <br />
         <input type="email" name="email" id="" />
